@@ -1,3 +1,5 @@
+'use client'
+
 import clsx from "clsx";
 
 interface ButtonProps {
@@ -29,6 +31,7 @@ const Button: React.FC<ButtonProps> = ({
         justify-center 
         rounded-md 
         px-3 
+        duration-500
         py-2 
         text-sm 
         font-semibold 
