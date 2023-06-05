@@ -6,22 +6,32 @@ import { NextResponse } from "next/server";
 export async function POST(
   request: Request
 ) {
-  const body = await request.json();
-  const {
-    email,
-    name,
-    password
-  } = body;
-
-  const hashedPassword = await bcrypt.hash(password, 12);
-
-  const user = await prisma.user.create({
-    data: {
+  try {
+    const body = await request.json();
+    const {
       email,
       name,
-      hashedPassword
+      password
+    } = body;
+  
+    if (!email || !name || !password) {
+      return new NextResponse('Faltando informações', { status: 400 })
     }
-  });
-
-  return NextResponse.json(user);
+  
+    const hashedPassword = await bcrypt.hash(password, 12);
+  
+    const user = await prisma.user.create({
+      data: {
+        email,
+        name,
+        hashedPassword
+      }
+    });
+  
+    return NextResponse.json(user);
+  
+  } catch (error: any) {
+    console.log(error, 'ERRO DE REGISTRO')
+    return new NextResponse('Internal Error', { status: 500 })
+  }
 }
