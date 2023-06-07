@@ -17,13 +17,13 @@ const useRoutes = () => {
       active: pathname === '/conversations' || !!conversationId
     },
     { 
-      label: 'Users', 
+      label: 'Usuários', 
       href: '/users', 
       icon: HiUsers, 
       active: pathname === '/users'
     },
     {
-      label: 'Logout', 
+      label: 'Sair', 
       onClick: () => signOut(),
       href: '#',
       icon: HiArrowLeftOnRectangle, 

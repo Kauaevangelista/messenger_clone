@@ -101,7 +101,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
                     "
                     onClick={onClose}
                   >
-                    <span className="sr-only">Close</span>
+                    <span className="sr-only">Fechar</span>
                     <IoClose className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>

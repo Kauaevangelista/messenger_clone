@@ -80,7 +80,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
               Profile
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
-              Edit your public information.
+            Edite suas informações públicas.
             </p>
 
             <div className="mt-10 flex flex-col gap-y-8">
