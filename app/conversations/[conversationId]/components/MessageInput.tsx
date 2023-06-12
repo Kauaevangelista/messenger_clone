@@ -38,6 +38,8 @@ const MessageInput: React.FC<MessageInputProps> = ({
           bg-neutral-100 
           w-full 
           rounded-full
+          focus:text-sky-500
+          duration-500
           focus:outline-none
         "
       />

@@ -87,10 +87,10 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                           <div className="ml-3 flex h-7 items-center">
                             <button
                               type="button"
-                              className="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                              className="rounded-md duration-500 bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                               onClick={onClose}
                             >
-                              <span className="sr-only">Close panel</span>
+                              <span className="sr-only">Fechar</span>
                               <IoClose size={24} aria-hidden="true" />
                             </button>
                           </div>
@@ -108,7 +108,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                             {statusText}
                           </div>
                           <div className="flex gap-10 my-8">
-                            <div onClick={() => setConfirmOpen(true)} className="flex flex-col gap-3 items-center cursor-pointer hover:opacity-75">
+                            <div onClick={() => setConfirmOpen(true)} className="flex flex-col gap-3 items-center cursor-pointer duration-500 hover:opacity-75">
                               <div className="w-10 h-10 bg-neutral-100 rounded-full flex items-center justify-center">
                                 <IoTrash size={20} />
                               </div>
@@ -182,7 +182,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                     sm:flex-shrink-0
                                   "
                                 >
-                                  Joined
+                                  Entrou
                                 </dt>
                                 <dd 
                                   className="

@@ -62,7 +62,7 @@ const Form = () => {
       <CldUploadButton 
         options={{ maxFiles: 1 }} 
         onUpload={handleUpload} 
-        uploadPreset="pgc9ehd5"
+        uploadPreset="hieshdsx"
       >
         <HiPhoto size={30} className="text-sky-500" />
       </CldUploadButton>
@@ -75,13 +75,14 @@ const Form = () => {
           register={register} 
           errors={errors} 
           required 
-          placeholder="Write a message"
+          placeholder="Escreva uma mensagem..."
         />
         <button 
           type="submit" 
           className="
             rounded-full 
             p-2 
+            duration-500
             bg-sky-500 
             cursor-pointer 
             hover:bg-sky-600 

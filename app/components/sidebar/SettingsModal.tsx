@@ -77,7 +77,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                 text-gray-900
               "
             >
-              Profile
+              Perfil
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
             Edite suas informações públicas.
@@ -86,7 +86,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             <div className="mt-10 flex flex-col gap-y-8">
               <Input
                 disabled={isLoading}
-                label="Name" 
+                label="Nome" 
                 id="name" 
                 errors={errors} 
                 required 
@@ -103,7 +103,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     text-gray-900
                   "
                 >
-                  Photo
+                  Foto
                 </label>
                 <div className="mt-2 flex items-center gap-x-3">
                   <Image
@@ -116,14 +116,14 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                   <CldUploadButton 
                     options={{ maxFiles: 1 }} 
                     onUpload={handleUpload} 
-                    uploadPreset="pgc9ehd5"
+                    uploadPreset="hieshdsx"
                   >
                     <Button
                       disabled={isLoading}
                       secondary
                       type="button"
                     >
-                      Change
+                      Mudar
                     </Button>
                   </CldUploadButton>
                 </div>
@@ -146,13 +146,13 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             secondary 
             onClick={onClose}
           >
-            Cancel
+            Cancelar
           </Button>
           <Button 
             disabled={isLoading}
             type="submit"
           >
-            Save
+            Salvar
           </Button>
         </div>
       </form>
